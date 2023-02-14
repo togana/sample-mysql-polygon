@@ -10,4 +10,7 @@ export class Point {
 
     @Column('point')
     location: string
+
+    @Column()
+    group: string
 }

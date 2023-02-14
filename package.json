@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
     "migration": "npm run typeorm migration:run -- -d ./src/data-source.ts",
-    "seed": "ts-node src/seed.ts",
+    "test": "ts-node test/test.ts",
     "typeorm": "typeorm-ts-node-commonjs"
   },
   "author": "togana",

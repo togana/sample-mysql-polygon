@@ -10,4 +10,7 @@ export class Polygon {
 
     @Column('polygon')
     polygon: string
+
+    @Column()
+    group: string
 }
