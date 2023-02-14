@@ -1,7 +1,10 @@
-# Awesome Project Build with TypeORM
+# sample-mysql-polygon
 
-Steps to run this project:
+## 使い方
 
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+```
+$ docker-compose up -d
+$ npm i
+$ npm run migration
+$ npm run test
+```
