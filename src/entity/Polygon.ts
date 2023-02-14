@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, Polygon as P } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 
 @Entity()
 export class Polygon {
@@ -8,6 +8,6 @@ export class Polygon {
     @Column()
     name: string
 
-    @Column('geometry')
-    geometry: P
+    @Column('polygon')
+    polygon: string
 }
