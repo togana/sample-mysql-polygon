@@ -12,6 +12,7 @@ export const AppDataSource = new DataSource({
     database: "sample",
     synchronize: false,
     logging: true,
+    logger: "file",
     entities: [Polygon, Point],
     migrations: ['src/migration/*.ts'],
     subscribers: [],
