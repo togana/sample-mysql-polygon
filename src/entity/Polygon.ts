@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, Index } from "typeorm"
 
 @Entity()
 export class Polygon {
@@ -9,6 +9,7 @@ export class Polygon {
     name: string
 
     @Column('polygon')
+    @Index({ spatial: true })
     polygon: string
 
     @Column()

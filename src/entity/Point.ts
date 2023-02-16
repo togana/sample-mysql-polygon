@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, Index } from "typeorm"
 
 @Entity()
 export class Point {
@@ -9,6 +9,7 @@ export class Point {
     name: string
 
     @Column('point')
+    @Index({ spatial: true })
     location: string
 
     @Column()
