@@ -72,7 +72,10 @@ const intersectPolygons = async (manager: EntityManager, dataSet: DataSet): Prom
       where: {
         group: dataSet.group,
         polygon: Raw((p) => `ST_INTERSECTS(${lineString}, ${p})`),
-      }
+      },
+      order: {
+        id: 'asc',
+      },
   });
   return filterPolygons;
 }
