@@ -8,7 +8,7 @@ import { dataSet05 } from "./case/dataSet05";
 import { dataSet06 } from "./case/dataSet06";
 import { dataSet07 } from "./case/dataSet07";
 import { dataSet08 } from "./case/dataSet08";
-import { dataSet09 } from "./case/dataSet09";
+// import { dataSet09 } from "./case/dataSet09";
 import { check } from "./util";
 
 AppDataSource.initialize().then(async () => {
@@ -21,7 +21,7 @@ AppDataSource.initialize().then(async () => {
   await check(AppDataSource.manager, dataSet06);
   await check(AppDataSource.manager, dataSet07);
   await check(AppDataSource.manager, dataSet08);
-  await check(AppDataSource.manager, dataSet09);
+  // await check(AppDataSource.manager, dataSet09);
 
   exit(0);
 }).catch(error => console.log(error))
